@@ -35,8 +35,9 @@ async function countryAPI(){
 
                 var cardBody = document.createElement('div')           
                 cardBody.classList.add('card-body') 
-                cardBody.innerHTML = `<h6><u>Capital: ${i.capital}</u></h6>`
+                cardBody.innerHTML = `<h6><u>Latlng : ${i.latlng}</u></h6>`
 
+                
                 
                 
                 var nn = "";
@@ -54,7 +55,8 @@ async function countryAPI(){
                 
                 var cardtext = document.createElement('div')           
                 cardtext.classList.add('card-text') 
-                cardtext.innerHTML = `<p> <label>Region :</label> ${i.region}, <br> <label>Country code :</label> ${i.cca3}, <br> <label>Native Name :</label> ${nn}</p> 
+                cardtext.innerHTML = `<p> <label>Capital :</label> ${i.capital},<br> <label>Region :</label> ${i.region}, <br> <label>Country code :</label> ${i.cca3}, <br> <label>Native Name :</label> ${nn}</p> 
+                
                 <p class="weather"></p>`
 
                 var img = document.createElement('img') 
